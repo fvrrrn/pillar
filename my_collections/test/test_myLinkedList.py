@@ -1,6 +1,7 @@
 from unittest import TestCase
 from my_collections.myLinkedList import MyLinkedList
-from my_collections.myLinkedListNode import MyLinkedListNode
+from my_collections.myLinkedList import MyLinkedListNode
+
 
 class TestMyLinkedList(TestCase):
     def test_find(self):
@@ -230,7 +231,6 @@ class TestMyLinkedList(TestCase):
         self.assertEqual(n2, l.first)
         self.assertEqual(n1, l.last)
         self.assertEqual(n3, l[1])
-
 
     def test_add_after(self):
         l = MyLinkedList()
